@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | S. Taylor Head</title>
+  <meta name="description" content="Research by S. Taylor Head: isoform-level genetics of breast cancer risk, replicable transcriptomic genetics, and statistical methods for genetic architecture.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-name" href="./">S. Taylor Head</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="research.html" aria-current="page">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <!-- <li><a href="assets/Head_CV.pdf">CV</a></li> -->
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <h1 class="page-title">Research</h1>
+  <p class="lede">Most breast cancer risk variants sit outside protein-coding sequence, so their effects run through gene regulation. I build and apply statistical methods that connect these variants to the molecular changes they cause, increasingly at the level of individual transcript isoforms.</p>
+
+  <section class="research-section t-teal" id="isoforms">
+    <h2>Isoform-level genetics of breast cancer risk</h2>
+    <p>Gene-level analyses sum over all of a gene’s transcripts, which hides variants that change isoform usage without changing total expression. Isoform-level eQTL mapping and isoform-level TWAS (isoTWAS) recover these effects.</p>
+    <p>Short-read reference annotations miss many isoforms expressed in breast tissue. With long-read transcript assemblies, we showed that a tissue-matched transcriptome reference improves isoform-level eQTL mapping and the downstream integrative analyses of breast cancer risk. In earlier work across six cancers, isoform-level analyses identified risk mechanisms that gene-level analyses did not detect.</p>
+    <p>I am now applying these approaches to mammographic density, one of the strongest risk factors for breast cancer, using breast tissue and cell-type-aware expression references.</p>
+    <ul class="selected">
+      <li><a href="https://doi.org/10.64898/2026.03.22.713514">Long-read transcript assemblies for isoform-level eQTL and breast cancer risk</a> <span class="venue">— preprint, 2026</span></li>
+      <li><a href="https://doi.org/10.1038/s41416-025-03141-y">Isoform-level analyses of six cancers</a> <span class="venue">— British Journal of Cancer, 2025</span></li>
+      <li><a href="https://doi.org/hbt36s">Cell-type aware TWAS of mammographic density phenotypes</a> <span class="venue">— preprint, 2025</span></li>
+    </ul>
+  </section>
+
+  <section class="research-section t-plum" id="replicability">
+    <h2>Replicable transcriptomic genetics</h2>
+    <p>eQTL, colocalization, and TWAS results depend on a chain of processing decisions made before any association test is run. Using GTEx, we compared transcript annotations (GENCODE v27, v38, v45, and Ensembl) and quantification pipelines (Salmon, kallisto, STAR with featureCounts, and STAR with RSEM). These choices changed which eGenes were detected and which TWAS associations replicated.</p>
+    <ul class="selected">
+      <li><a href="https://doi.org/10.1038/s41588-026-02827-0">Quantification method affects replicability of eQTL analysis, colocalization and TWAS</a> <span class="venue">— Nature Genetics, 2026</span>; <a href="https://github.com/bhattacharya-a-bt/QuantMethod_QTL_Comparison">code</a></li>
+    </ul>
+  </section>
+
+  <section class="research-section t-ochre" id="methods">
+    <h2>Statistical methods for genetic architecture</h2>
+    <p>During my PhD, I developed POIROT, a test for parent-of-origin effects that uses multiple phenotypes measured in unrelated individuals, so it does not require family data. I also combined cis- and trans-eQTL information in TWAS of breast and ovarian cancer, identifying more than 100 susceptibility genes in the BCAC and OCAC consortia.</p>
+    <p>My current work includes multi-trait polygenic scores for mammographic density phenotypes and the evaluation of polygenic, clinical, and mammography AI models for breast cancer risk prediction.</p>
+    <ul class="selected">
+      <li><a href="https://www.cell.com/ajhg/abstract/S0002-9297(24)00127-7">Cis- and trans-eQTL TWAS of breast and ovarian cancer</a> <span class="venue">— American Journal of Human Genetics, 2024</span></li>
+      <li><a href="https://doi.org/10.1093/bioinformatics/btad199">POIROT: a test for parent-of-origin effects in unrelated samples</a> <span class="venue">— Bioinformatics, 2023</span></li>
+      <li><a href="https://doi.org/hcqdb6">Mammography AI, polygenic, and clinical breast cancer risk models</a> <span class="venue">— JNCI, 2026</span></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">S. Taylor Head, MD Anderson Cancer Center, Houston, Texas</div>
+</footer>
+</body>
+</html>

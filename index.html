@@ -1,142 +1,133 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html lang="en">
 <head>
-	<meta name="generator" content="Hugo 0.126.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>console-demo/</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="all,follow">
-    <meta name="googlebot" content="index,follow,snippet,archive">
-    <link rel="stylesheet" href="http://localhost:4321/hugo-theme-console/css/terminal-0.7.2.min.css">
-    <link rel="stylesheet" href="http://localhost:4321/hugo-theme-console/css/animate-4.1.1.min.css">
-    <link rel="stylesheet" href="http://localhost:4321/hugo-theme-console/css/console.css">
-    
-      <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
-       
-      <link href="http://localhost:4321/index.xml" rel="alternate" type="application/rss+xml" title="console-demo" />
-    <meta property="og:title" content="console-demo" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:4321/" />
-
-
-<meta name="twitter:title" content="console-demo"/>
-<meta name="twitter:description" content=""/>
-
-  
-
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>S. Taylor Head</title>
+  <meta name="description" content="S. Taylor Head, PhD — statistical geneticist studying the genetic architecture of breast cancer risk at transcript-isoform resolution. Postdoctoral fellow, MD Anderson Cancer Center.">
+  <meta property="og:title" content="S. Taylor Head, PhD">
+  <meta property="og:description" content="Statistical genetics of breast cancer risk, from variants to transcript isoforms.">
+  <meta property="og:image" content="https://staylorhead.github.io/assets/img/taylor-head.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
 </head>
-<body class="terminal">
-    <div class="container">
-        <div class="terminal-nav">
-          <header class="terminal-logo">
-            <div class="logo terminal-prompt">
-              
-              
-              <a href="http://localhost:4321/" class="no-style site-name">console-demo</a>:~# 
-              </div></header>
-          <nav class="terminal-menu">
-            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
-                
-                <li><a href="http://localhost:4321/about/" typeof="ListItem">about/</a></li>
-                
-                <li><a href="http://localhost:4321/posts/" typeof="ListItem">posts/</a></li>
-                
-                <li><a href="http://localhost:4321/photos/" typeof="ListItem">photos/</a></li>
-                
-            </ul>
-          </nav>
-        </div>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-name" href="./">S. Taylor Head</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="./" aria-current="page">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <!-- Add your CV: put the PDF at assets/Head_CV.pdf, then uncomment the next line. -->
+        <!-- <li><a href="assets/Head_CV.pdf">CV</a></li> -->
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+
+  <section class="intro">
+    <div>
+      <h1>S. Taylor Head, PhD</h1>
+      <p class="role">Postdoctoral Fellow, Bhattacharya Lab<br>Department of Epidemiology, MD Anderson Cancer Center</p>
     </div>
+    <img class="portrait" src="assets/img/taylor-head.jpg" alt="Portrait of Taylor Head" width="640" height="755">
+  </section>
 
-    <div class="container animated zoomIn fast" >
-        
+  <figure class="gene-model">
+    <svg viewBox="0 0 720 176" role="img" aria-labelledby="gm-title">
+      <title id="gm-title">A gene with three transcript isoforms. A genetic variant is linked to an alternative exon used only by the second isoform.</title>
 
-<h1>About</h1>
+      <g class="gm-isoform">
+        <text class="gm-label" x="0" y="64">isoform 1</text>
+        <polyline class="gm-intron" points="130,60 190,60"/><polyline class="gm-intron" points="230,60 400,60"/>
+        <polyline class="gm-intron" points="450,60 520,60"/><polyline class="gm-intron" points="560,60 640,60"/>
+        <g fill="var(--iso-teal)">
+          <rect x="80" y="52" width="50" height="16" rx="1.5"/><rect x="190" y="52" width="40" height="16" rx="1.5"/>
+          <rect x="400" y="52" width="50" height="16" rx="1.5"/><rect x="520" y="52" width="40" height="16" rx="1.5"/>
+          <rect x="640" y="52" width="60" height="16" rx="1.5"/>
+        </g>
+      </g>
 
-<p>
-Console is a minimal, responsive and light theme for Hugo inspired by Linux console.  <a href="about/">(more)</a>
-</p>
-<br/>
+      <g class="gm-isoform">
+        <text class="gm-label" x="0" y="109">isoform 2</text>
+        <polyline class="gm-intron" points="130,105 190,105"/><polyline class="gm-intron" points="230,105 290,105"/>
+        <polyline class="gm-intron" points="320,105 400,105"/><polyline class="gm-intron" points="450,105 640,105"/>
+        <g fill="var(--iso-plum)">
+          <rect x="80" y="97" width="50" height="16" rx="1.5"/><rect x="190" y="97" width="40" height="16" rx="1.5"/>
+          <rect x="290" y="97" width="30" height="16" rx="1.5"/>
+          <rect x="400" y="97" width="50" height="16" rx="1.5"/><rect x="640" y="97" width="60" height="16" rx="1.5"/>
+        </g>
+      </g>
 
-<h1>Latest posts</h1>
+      <g class="gm-isoform">
+        <text class="gm-label" x="0" y="154">isoform 3</text>
+        <polyline class="gm-intron" points="130,150 190,150"/><polyline class="gm-intron" points="230,150 400,150"/>
+        <polyline class="gm-intron" points="450,150 520,150"/>
+        <g fill="var(--iso-ochre)">
+          <rect x="104" y="142" width="26" height="16" rx="1.5"/><rect x="190" y="142" width="40" height="16" rx="1.5"/>
+          <rect x="400" y="142" width="50" height="16" rx="1.5"/><rect x="520" y="142" width="74" height="16" rx="1.5"/>
+        </g>
+      </g>
 
-<div class="posts-list">
+      <g class="gm-link">
+        <line class="gm-variant" x1="305" y1="23" x2="305" y2="95"/>
+        <circle class="gm-snp" cx="305" cy="17" r="5.5"/>
+        <text class="gm-label" x="317" y="21">variant</text>
+      </g>
+    </svg>
+    <figcaption>One gene, three isoforms. A variant can shift which isoform a cell makes without changing the gene’s total expression. Much of my work is about finding those effects and asking whether they influence breast cancer risk.</figcaption>
+  </figure>
 
-    
-        <div class="post">
-            <p>
-                <div class="date">Dec. 1, 2020</div>
-                <h1><a href="http://localhost:4321/posts/2020-12-01-r-rmarkdown/" title="Hello R Markdown">Hello R Markdown</a></h1>
-                R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.
-            </p>
-        </div>    
-    
-        <div class="post">
-            <p>
-                <div class="date">Aug. 3, 2019</div>
-                <h1><a href="http://localhost:4321/posts/what-is-hugo/" title="Introduction">Introduction</a></h1>
-                <p>Hugo is an open-source project and lives by the work of its contributors. There are plenty of open issues, and we need your help to make Hugo even more awesome. You don&rsquo;t need to be a Go guru to contribute to the project&rsquo;s development.</p>
-            </p>
-        </div>    
-    
-        <div class="post">
-            <p>
-                <div class="date">Jul. 1, 2019</div>
-                <h1><a href="http://localhost:4321/posts/introduction/" title="What is Hugo">What is Hugo</a></h1>
-                <p>Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again.</p>
-            </p>
-        </div>    
-    
+  <h2>About</h2>
+  <p>I am a statistical geneticist. I develop and apply statistical models to understand the genetic architecture of complex human traits, with an emphasis on breast cancer risk and mammographic density.</p>
+  <p>My recent work maps genetic effects at the level of transcript isoforms rather than whole genes, using long-read transcript assemblies and isoform-level transcriptome-wide association studies (TWAS). I also study how analytic choices in RNA-seq processing affect whether eQTL, colocalization, and TWAS findings replicate.</p>
+  <p>I am a postdoctoral fellow with <a href="https://bhattacharya-lab.com">Arjun Bhattacharya</a> at MD Anderson Cancer Center. I received my MSPH and PhD in Biostatistics from Emory University, where I worked with <a href="https://winshipcancer.emory.edu/profiles/epstein-michael.php">Michael Epstein</a> on methods for parent-of-origin effects and on TWAS of breast and ovarian cancer.</p>
 
-</div>
+  <h2>Research</h2>
+  <ul class="themes">
+    <li class="t-teal">
+      <h3><a href="research.html#isoforms">Isoform-level genetics of breast cancer risk</a></h3>
+      <p>Resolving risk loci to the transcript isoforms they act through, with long-read assemblies and isoTWAS.</p>
+    </li>
+    <li class="t-plum">
+      <h3><a href="research.html#replicability">Replicable transcriptomic genetics</a></h3>
+      <p>Measuring how quantification and annotation choices change eQTL, colocalization, and TWAS results.</p>
+    </li>
+    <li class="t-ochre">
+      <h3><a href="research.html#methods">Statistical methods for genetic architecture</a></h3>
+      <p>Tests for parent-of-origin effects, cis- and trans-eQTL TWAS, and mammographic density as an intermediate risk phenotype.</p>
+    </li>
+  </ul>
 
-<h1>Latest photos</h1>
+  <h2>News</h2>
+  <ul class="news">
+    <li><time datetime="2026-10">Oct 2026</time><span>Our study of how quantification methods affect eQTL replicability, colocalization, and TWAS is out in <a href="https://doi.org/10.1038/s41588-026-02827-0"><em>Nature Genetics</em></a>.</span></li>
+    <li><time datetime="2026-06">Jun 2026</time><span>Comparison of mammography AI, polygenic, and clinical breast cancer risk models published in <a href="https://doi.org/hcqdb6"><em>JNCI</em></a>.</span></li>
+    <li><time datetime="2026-03">Mar 2026</time><span>Preprint: <a href="https://doi.org/10.64898/2026.03.22.713514">long-read transcript assemblies improve isoform-level eQTL and integrative analyses of breast cancer risk</a>.</span></li>
+    <li><time datetime="2025-08">Aug 2025</time><span>Isoform-level analyses of six cancers published in <a href="https://doi.org/10.1038/s41416-025-03141-y"><em>British Journal of Cancer</em></a>.</span></li>
+  </ul>
 
-<div class="image-grid">
+  <h2>Contact</h2>
+  <ul class="links">
+    <li><a href="mailto:STHead@mdanderson.org">STHead@mdanderson.org</a></li>
+    <li><a href="https://scholar.google.com/citations?user=Q_bzA70AAAAJ">Google Scholar</a></li>
+    <li><a href="https://orcid.org/0000-0002-1761-1145">ORCID</a></li>
+    <li><a href="https://github.com/staylorhead">GitHub</a></li>
+  </ul>
 
-    
-        <a href="http://localhost:4321/photos/warsaw-poland/" title="Warsaw, Poland">
-        
-        
-            
-            <img src="/photos/warsaw-poland/warsaw-poland_hu78406989b66d0a4378dc73ac58930e15_473284_400x0_resize_q75_box.jpg" alt="warsaw-poland.jpg" class="img-responsive">
-        
-        </a>
-    
-        <a href="http://localhost:4321/photos/hel-poland-3/" title="Hel, Poland">
-        
-        
-            
-            <img src="/photos/hel-poland-3/hel-poland-3_huc95542b1b48761021a752ee5bc3a7f13_346339_400x0_resize_q75_box.jpg" alt="hel-poland-3.jpg" class="img-responsive">
-        
-        </a>
-    
-        <a href="http://localhost:4321/photos/hel-poland-2/" title="Hel, Poland">
-        
-        
-            
-            <img src="/photos/hel-poland-2/hel-poland-2_hue3727791d33e532b391525f593acfcb6_501449_400x0_resize_q75_box.jpg" alt="hel-poland-2.jpg" class="img-responsive">
-        
-        </a>
-    
+</main>
 
-</div>
-
-
-        <div class="footer">
-    Powered by <a href="https://gohugo.io/">Hugo</a> with
-    <a href="https://github.com/mrmierzejewski/hugo-theme-console/">Console Theme</a>. 
-</div>
-
-    </div>
-  </body>
+<footer class="site-footer">
+  <div class="wrap">S. Taylor Head, MD Anderson Cancer Center, Houston, Texas</div>
+</footer>
+</body>
 </html>
