@@ -8,27 +8,56 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="site-header">
-  <div class="wrap">
+<header class="topbar">
+  <div class="in">
     <a class="site-name" href="./">S. Taylor Head</a>
     <nav class="site-nav" aria-label="Main">
       <ul>
         <li><a href="./">Home</a></li>
         <li><a href="research.html" aria-current="page">Research</a></li>
         <li><a href="publications.html">Publications</a></li>
+        <!-- Add your CV: put the PDF at assets/Head_CV.pdf, then uncomment the next line on each page. -->
         <!-- <li><a href="assets/Head_CV.pdf">CV</a></li> -->
       </ul>
     </nav>
   </div>
 </header>
 
-<main id="main" class="wrap">
+<div class="layout">
+  <aside class="profile">
+    <img class="portrait" src="assets/img/taylor-head.jpg" alt="Portrait of Taylor Head" width="640" height="755">
+    <p class="name">S. Taylor Head, PhD</p>
+    <p class="role">Postdoctoral Fellow<br>Department of Epidemiology<br>MD Anderson Cancer Center</p>
+    <ul class="contact">
+      <li><a href="mailto:STHead@mdanderson.org">STHead@mdanderson.org</a></li>
+      <li><a href="https://scholar.google.com/citations?user=Q_bzA70AAAAJ">Google Scholar</a></li>
+      <li><a href="https://orcid.org/0000-0002-1761-1145">ORCID</a></li>
+      <li><a href="https://github.com/staylorhead">GitHub</a></li>
+    </ul>
+    <div class="extra">
+      <h2>Education</h2>
+      <ul class="facts">
+        <li>PhD, Biostatistics<small>Emory University</small></li>
+        <li>MSPH, Biostatistics<small>Emory University</small></li>
+      </ul>
+      <h2>Interests</h2>
+      <ul class="facts">
+        <li>Statistical genetics</li>
+        <li>Isoform-level eQTL and TWAS</li>
+        <li>Breast cancer risk</li>
+        <li>Mammographic density</li>
+      </ul>
+    </div>
+  </aside>
+
+  <main id="main" class="content">
+
   <h1 class="page-title">Research</h1>
   <p class="lede">Most breast cancer risk variants sit outside protein-coding sequence, so their effects run through gene regulation. I build and apply statistical methods that connect these variants to the molecular changes they cause, increasingly at the level of individual transcript isoforms.</p>
 
@@ -62,10 +91,11 @@
       <li><a href="https://doi.org/hcqdb6">Mammography AI, polygenic, and clinical breast cancer risk models</a> <span class="venue">— JNCI, 2026</span></li>
     </ul>
   </section>
-</main>
+  </main>
+</div>
 
 <footer class="site-footer">
-  <div class="wrap">S. Taylor Head, MD Anderson Cancer Center, Houston, Texas</div>
+  <div class="in">S. Taylor Head, MD Anderson Cancer Center, Houston, Texas</div>
 </footer>
 </body>
 </html>

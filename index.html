@@ -11,38 +11,61 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="site-header">
-  <div class="wrap">
+<header class="topbar">
+  <div class="in">
     <a class="site-name" href="./">S. Taylor Head</a>
     <nav class="site-nav" aria-label="Main">
       <ul>
         <li><a href="./" aria-current="page">Home</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="publications.html">Publications</a></li>
-        <!-- Add your CV: put the PDF at assets/Head_CV.pdf, then uncomment the next line. -->
+        <!-- Add your CV: put the PDF at assets/Head_CV.pdf, then uncomment the next line on each page. -->
         <!-- <li><a href="assets/Head_CV.pdf">CV</a></li> -->
       </ul>
     </nav>
   </div>
 </header>
 
-<main id="main" class="wrap">
-
-  <section class="intro">
-    <div>
-      <h1>S. Taylor Head, PhD</h1>
-      <p class="role">Postdoctoral Fellow, Bhattacharya Lab<br>Department of Epidemiology, MD Anderson Cancer Center</p>
-    </div>
+<div class="layout">
+  <aside class="profile">
     <img class="portrait" src="assets/img/taylor-head.jpg" alt="Portrait of Taylor Head" width="640" height="755">
-  </section>
+    <h1>S. Taylor Head, PhD</h1>
+    <p class="role">Postdoctoral Fellow<br>Department of Epidemiology<br>MD Anderson Cancer Center</p>
+    <ul class="contact">
+      <li><a href="mailto:STHead@mdanderson.org">STHead@mdanderson.org</a></li>
+      <li><a href="https://scholar.google.com/citations?user=Q_bzA70AAAAJ">Google Scholar</a></li>
+      <li><a href="https://orcid.org/0000-0002-1761-1145">ORCID</a></li>
+      <li><a href="https://github.com/staylorhead">GitHub</a></li>
+    </ul>
+    <div class="extra">
+      <h2>Education</h2>
+      <ul class="facts">
+        <li>PhD, Biostatistics<small>Emory University</small></li>
+        <li>MSPH, Biostatistics<small>Emory University</small></li>
+      </ul>
+      <h2>Interests</h2>
+      <ul class="facts">
+        <li>Statistical genetics</li>
+        <li>Isoform-level eQTL and TWAS</li>
+        <li>Breast cancer risk</li>
+        <li>Mammographic density</li>
+      </ul>
+    </div>
+  </aside>
 
-  <figure class="gene-model">
+  <main id="main" class="content">
+    <section>
+      <h2>About</h2>
+      <p>I am a statistical geneticist. I develop and apply statistical models to understand the genetic architecture of complex human traits, with an emphasis on breast cancer risk and mammographic density.</p>
+      <p>My recent work maps genetic effects at the level of transcript isoforms rather than whole genes, using long-read transcript assemblies and isoform-level transcriptome-wide association studies (TWAS). I also study how analytic choices in RNA-seq processing affect whether eQTL, colocalization, and TWAS findings replicate.</p>
+      <p>I am a postdoctoral fellow with <a href="https://bhattacharya-lab.com">Arjun Bhattacharya</a> at MD Anderson Cancer Center. I received my MSPH and PhD in Biostatistics from Emory University, where I worked with <a href="https://winshipcancer.emory.edu/profiles/epstein-michael.php">Michael Epstein</a> on methods for parent-of-origin effects and on TWAS of breast and ovarian cancer.</p>
+      <figure class="gene-model">
     <svg viewBox="0 0 720 176" role="img" aria-labelledby="gm-title">
       <title id="gm-title">A gene with three transcript isoforms. A genetic variant is linked to an alternative exon used only by the second isoform.</title>
 
@@ -86,48 +109,62 @@
     </svg>
     <figcaption>One gene, three isoforms. A variant can shift which isoform a cell makes without changing the gene’s total expression. Much of my work is about finding those effects and asking whether they influence breast cancer risk.</figcaption>
   </figure>
+    </section>
 
-  <h2>About</h2>
-  <p>I am a statistical geneticist. I develop and apply statistical models to understand the genetic architecture of complex human traits, with an emphasis on breast cancer risk and mammographic density.</p>
-  <p>My recent work maps genetic effects at the level of transcript isoforms rather than whole genes, using long-read transcript assemblies and isoform-level transcriptome-wide association studies (TWAS). I also study how analytic choices in RNA-seq processing affect whether eQTL, colocalization, and TWAS findings replicate.</p>
-  <p>I am a postdoctoral fellow with <a href="https://bhattacharya-lab.com">Arjun Bhattacharya</a> at MD Anderson Cancer Center. I received my MSPH and PhD in Biostatistics from Emory University, where I worked with <a href="https://winshipcancer.emory.edu/profiles/epstein-michael.php">Michael Epstein</a> on methods for parent-of-origin effects and on TWAS of breast and ovarian cancer.</p>
+    <section>
+      <h2>Research</h2>
+      <ul class="themes">
+        <li class="t-teal">
+          <h3><a href="research.html#isoforms">Isoform-level genetics of breast cancer risk</a></h3>
+          <p>Resolving risk loci to the transcript isoforms they act through, with long-read assemblies and isoTWAS.</p>
+        </li>
+        <li class="t-plum">
+          <h3><a href="research.html#replicability">Replicable transcriptomic genetics</a></h3>
+          <p>How quantification and annotation choices change eQTL, colocalization, and TWAS results.</p>
+        </li>
+        <li class="t-ochre">
+          <h3><a href="research.html#methods">Statistical methods for genetic architecture</a></h3>
+          <p>Parent-of-origin tests, cis- and trans-eQTL TWAS, and mammographic density as a risk phenotype.</p>
+        </li>
+      </ul>
+    </section>
 
-  <h2>Research</h2>
-  <ul class="themes">
-    <li class="t-teal">
-      <h3><a href="research.html#isoforms">Isoform-level genetics of breast cancer risk</a></h3>
-      <p>Resolving risk loci to the transcript isoforms they act through, with long-read assemblies and isoTWAS.</p>
-    </li>
-    <li class="t-plum">
-      <h3><a href="research.html#replicability">Replicable transcriptomic genetics</a></h3>
-      <p>Measuring how quantification and annotation choices change eQTL, colocalization, and TWAS results.</p>
-    </li>
-    <li class="t-ochre">
-      <h3><a href="research.html#methods">Statistical methods for genetic architecture</a></h3>
-      <p>Tests for parent-of-origin effects, cis- and trans-eQTL TWAS, and mammographic density as an intermediate risk phenotype.</p>
-    </li>
-  </ul>
+    <section>
+      <h2>News</h2>
+      <ul class="news">
+        <li><time datetime="2026-10">Oct 2026</time><span>Our study of how quantification methods affect eQTL replicability, colocalization, and TWAS is out in <a href="https://doi.org/10.1038/s41588-026-02827-0"><em>Nature Genetics</em></a>.</span></li>
+        <li><time datetime="2026-06">Jun 2026</time><span>Comparison of mammography AI, polygenic, and clinical breast cancer risk models published in <a href="https://doi.org/hcqdb6"><em>JNCI</em></a>.</span></li>
+        <li><time datetime="2026-03">Mar 2026</time><span>Preprint: <a href="https://doi.org/10.64898/2026.03.22.713514">long-read transcript assemblies improve isoform-level eQTL and integrative analyses of breast cancer risk</a>.</span></li>
+        <li><time datetime="2025-08">Aug 2025</time><span>Isoform-level analyses of six cancers published in <a href="https://doi.org/10.1038/s41416-025-03141-y"><em>British Journal of Cancer</em></a>.</span></li>
+      </ul>
+    </section>
 
-  <h2>News</h2>
-  <ul class="news">
-    <li><time datetime="2026-10">Oct 2026</time><span>Our study of how quantification methods affect eQTL replicability, colocalization, and TWAS is out in <a href="https://doi.org/10.1038/s41588-026-02827-0"><em>Nature Genetics</em></a>.</span></li>
-    <li><time datetime="2026-06">Jun 2026</time><span>Comparison of mammography AI, polygenic, and clinical breast cancer risk models published in <a href="https://doi.org/hcqdb6"><em>JNCI</em></a>.</span></li>
-    <li><time datetime="2026-03">Mar 2026</time><span>Preprint: <a href="https://doi.org/10.64898/2026.03.22.713514">long-read transcript assemblies improve isoform-level eQTL and integrative analyses of breast cancer risk</a>.</span></li>
-    <li><time datetime="2025-08">Aug 2025</time><span>Isoform-level analyses of six cancers published in <a href="https://doi.org/10.1038/s41416-025-03141-y"><em>British Journal of Cancer</em></a>.</span></li>
-  </ul>
-
-  <h2>Contact</h2>
-  <ul class="links">
-    <li><a href="mailto:STHead@mdanderson.org">STHead@mdanderson.org</a></li>
-    <li><a href="https://scholar.google.com/citations?user=Q_bzA70AAAAJ">Google Scholar</a></li>
-    <li><a href="https://orcid.org/0000-0002-1761-1145">ORCID</a></li>
-    <li><a href="https://github.com/staylorhead">GitHub</a></li>
-  </ul>
-
-</main>
+    <section>
+      <h2>Selected publications</h2>
+      <ul class="pubs">
+        <li>
+          <a class="pub-title" href="https://doi.org/10.1038/s41588-026-02827-0">Quantification method affects replicability of eQTL analysis, colocalization and TWAS</a>
+          <span class="pub-authors"><span class="me">S. Taylor Head</span>, Sean T. Bresnahan, Yung-Han Chang, Vihan M. Shah, Nolan R. Cole, William Wu, Arjun Bhattacharya</span>
+          <span class="pub-meta"><em>Nature Genetics</em>, 2026</span>
+        </li>
+        <li>
+          <a class="pub-title" href="https://doi.org/10.64898/2026.03.22.713514">Improving isoform-level eQTL and integrative genetic analyses of breast cancer risk with long-read RNA transcript assemblies</a>
+          <span class="pub-authors"><span class="me">S. Taylor Head</span>, Aryun Nemani, Yung-Han Chang, Tabitha A. Harrison, Sean T. Bresnahan, Joseph H. Rothstein, Weiva Sieh, Sara Lindström, Arjun Bhattacharya</span>
+          <span class="pub-meta"><em>bioRxiv</em>, 2026 <span class="tag">Preprint</span></span>
+        </li>
+        <li>
+          <a class="pub-title" href="https://www.cell.com/ajhg/abstract/S0002-9297(24)00127-7">Cis- and trans-eQTL TWASs of breast and ovarian cancer identify more than 100 susceptibility genes in the BCAC and OCAC consortia</a>
+          <span class="pub-authors"><span class="me">S. Taylor Head</span>, Felipe Dezem, Andrei Todor, Jingjing Yang, Jasmine Plummer, Simon Gayther, Siddhartha Kar, Joellen Schildkraut, Michael P. Epstein</span>
+          <span class="pub-meta"><em>American Journal of Human Genetics</em>, 2024</span>
+        </li>
+      </ul>
+      <a class="more" href="publications.html">All publications</a>
+    </section>
+  </main>
+</div>
 
 <footer class="site-footer">
-  <div class="wrap">S. Taylor Head, MD Anderson Cancer Center, Houston, Texas</div>
+  <div class="in">S. Taylor Head, MD Anderson Cancer Center, Houston, Texas</div>
 </footer>
 </body>
 </html>
