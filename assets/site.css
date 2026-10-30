@@ -66,22 +66,6 @@ a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; border-ra
 .lede { font-size: 1.1875rem; line-height: 1.55; color: var(--ink-soft); margin-bottom: 2.5rem !important; }
 .note { font-size: .875rem; color: var(--ink-soft); }
 
-/* gene model figure */
-.gene-model { margin: 1.75rem 0 0; padding: 1.5rem 0 0; border-top: 1px solid var(--rule); }
-.gene-model svg { width: 100%; height: auto; display: block; overflow: visible; }
-.gene-model figcaption { font-size: .8125rem; color: var(--ink-soft); line-height: 1.5; margin-top: .75rem; }
-.gm-intron { stroke: var(--ink-faint); stroke-width: 1.25; fill: none; }
-.gm-label { font-family: var(--sans); font-size: 11px; fill: var(--ink-soft); }
-.gm-variant { stroke: var(--ink); stroke-width: 1.25; stroke-dasharray: 3 3; }
-.gm-snp { fill: var(--paper); stroke: var(--ink); stroke-width: 1.5; }
-@media (prefers-reduced-motion: no-preference) {
-  .gm-isoform { opacity: 0; animation: gm-in .5s ease-out forwards; }
-  .gm-isoform:nth-of-type(2) { animation-delay: .15s; }
-  .gm-isoform:nth-of-type(3) { animation-delay: .3s; }
-  .gm-link { opacity: 0; animation: gm-in .6s ease-out .75s forwards; }
-  @keyframes gm-in { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
-}
-
 /* research themes: three columns on wide screens */
 .themes { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.75rem; }
 .themes li { border-top: 3px solid var(--rule); padding-top: .9rem; }
@@ -140,5 +124,4 @@ a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; border-ra
   .site-nav ul { gap: 1.1rem; }
   .news li { grid-template-columns: 1fr; gap: 0; }
   .page-title { font-size: 1.9rem; }
-  .gm-label { font-size: 18px; }
 }
